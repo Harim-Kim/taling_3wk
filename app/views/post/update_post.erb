@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>게시물 수정</h1>
+    <form action="/post/update/<%=@update_post.id%>" method="post">
+      title:<br>
+      <input type="text" name="title_update" value=<%=@update_post.title%>><br>
+      content:<br>
+      <textarea name="content_update"  cols="40" rows="8">
+          <%=@update_post.content%>
+      </textarea><br>
+      <input type="submit" value="Submit">
+    </form>
+</div>

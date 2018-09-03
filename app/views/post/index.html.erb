@@ -17,7 +17,7 @@
     <tr>
       <th scope="row"><%=p.id%></th>
       <td><%=p.title%></td>
-      <td><%=p.content%></td>
+      <td><a href="/post/read/<%=p.id%>"><%=p.content%></a> <a href="/post/update_post/<%=p.id%>">[수정]</a><a href="/post/delete/<%=p.id%>">[삭제]</a></td>
       <td><%=p.views%></td>
     </tr>
     <%end%>
