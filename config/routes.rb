@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'post/new' #게시물을 작성하는 공간(user)
   post 'post/create' #작성된 게시물을 받아 db에 저장하는 곳(server)
 
-  get 'post/read' #게시물 하나 읽는 공간
+  get 'post/read/:post_id' => 'post/read' #게시물 하나 읽는 공간
 
   get 'post/update_post' #게시물을 수정하는 공간(user)
   post 'post/update' #수정된 게시물 정보를 받아 db에 적용하는 곳(server)
